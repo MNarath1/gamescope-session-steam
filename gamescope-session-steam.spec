@@ -1,13 +1,12 @@
 Name:           gamescope-session-steam
-Version:        {{{ git_dir_version }}}
+Version:        1.0
 Release:        1%{?dist}
 Summary:        Steam Big Picture session
 
 License:        MIT
 URL:            https://github.com/MNarath1/gamescope-session-steam
 
-VCS:            {{{ git_dir_vcs }}}
-Source:        	{{{ git_dir_pack }}}
+Source:         https://github.com/MNarath1/gamescope-session-steam/archive/refs/tags/1.0.tar.gz
 BuildArch:      noarch
 
 Requires:       gamescope-session-plus
@@ -17,11 +16,8 @@ BuildRequires:  systemd-rpm-macros
 %description
 Steam Big Picture session
 
-# Disable debug packages
-%define debug_package %{nil}
-
 %prep
-{{{ git_dir_setup_macro }}}
+%autosetup
 
 %build
 
@@ -55,9 +51,3 @@ rm %{buildroot}%{_bindir}/steamos-update
 %{_datadir}/gamescope-session-plus/sessions.d/steam
 %{_datadir}/polkit-1/actions/org.chimeraos.update.policy
 %{_datadir}/wayland-sessions/gamescope-session-steam.desktop
-%{_datadir}/wayland-sessions/gamescope-session.desktop
-
-# Finally, changes from the latest release of your application are generated from
-# your project's Git history. It will be empty until you make first annotated Git tag.
-%changelog
-{{{ git_dir_changelog }}}
