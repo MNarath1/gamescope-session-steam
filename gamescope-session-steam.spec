@@ -9,7 +9,7 @@ URL:            https://github.com/MNarath1/gamescope-session-steam
 Source:         https://github.com/MNarath1/gamescope-session-steam/archive/refs/tags/1.0.tar.gz
 BuildArch:      noarch
 
-Requires:       gamescope-session-plus
+Requires:       gamescope-session
 
 BuildRequires:  systemd-rpm-macros
 
