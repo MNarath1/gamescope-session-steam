@@ -1,12 +1,12 @@
 Name:           gamescope-session-steam
-Version:        1.0
+Version:        1.1
 Release:        1%{?dist}
 Summary:        Steam Big Picture session
 
 License:        MIT
 URL:            https://github.com/MNarath1/gamescope-session-steam
 
-Source:         https://github.com/MNarath1/gamescope-session-steam/archive/refs/tags/1.0.tar.gz
+Source:         https://github.com/MNarath1/gamescope-session-steam/archive/refs/tags/1.1.tar.gz
 BuildArch:      noarch
 
 Requires:       gamescope-session
